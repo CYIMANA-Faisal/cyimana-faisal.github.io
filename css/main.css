@@ -1,0 +1,13 @@
+html, body{
+    height: auto;
+    width: 100%;
+    font-size: 18px;
+    background-color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+}
+.container{
+    max-width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
