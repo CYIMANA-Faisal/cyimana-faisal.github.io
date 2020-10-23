@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
 html, body{
     height: auto;
     width: 100%;
@@ -34,7 +35,6 @@ header{
 .nav-container{
     grid-column: 2/ -2;
     grid-template-columns: repeat(12, 1fr);
-    background-color: #3E721D;
 }
 nav{
     float: right;
@@ -94,6 +94,7 @@ nav li a{
 .about-me{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    padding: 30px 0px 30px 0px;
 }
 .about-me h1{
     grid-column: 3/ -3;
@@ -110,6 +111,7 @@ nav li a{
 .projects{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    padding: 30px 0px 30px 0px;
 }
 .projects h1{
     grid-column: 3/ -3;
@@ -117,34 +119,126 @@ nav li a{
 .projects div{
     grid-column: 3/ -3;
 }
-.carousel{
-
+.project-container{
+    width: 100%;
+    margin:10px auto;
 }
-.slider{
+.project-carousel{
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+.project-slider{
+    height: 100%;
     display: flex;
+    width:400%;
+    transition: all 0.3s;
 }
-span{
+.project-slider section{
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.project-slider section div{
+    width: 40%;
+}
+.project-slider section div span{
     color: #3E721D;
 }
-.project-card{
-    width: 631px;
-    border-radius: 10px;
-    padding: 10px;
-    -webkit-box-shadow: 0 20px 20px #777;
-    -moz-box-shadow: 0 20px 20px #777;
-    box-shadow: 0 20px 20px #777;
+.project-controls .project-arrow{
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+    cursor: pointer;
 }
+.project-controls .project-arrow i{
+    font-size: 60px;
+    color: black;
+}
+.project-arrow.project-left{
+    left: 10px;
+}
+.project-arrow.project-right{
+    right: 10px;
+}
+
+/* 
+################################
+    Testmonial section styling
+################################
+*/
 .testimonial{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    padding: 30px 0px 30px 0px;
+    background-image: url('../images/testimonial-bg.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: #ffffff;
 }
 .testimonial h1{
     grid-column: 3/ -3;
 }
+.testimonial div{
+    grid-column: 3/ -3;
+}
+#testimonial-profile{
+    border-radius: 50%;
+    height: 100px;
+    width: 105px;
+}
+#testimony-content{
+    width: 50%;
+    text-align: center;
+}
+#testifier{
+    width: 100%;
+}
+.container{
+    width: 100%;
+    margin:10px auto;
+}
+.carousel{
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+.slider{
+    height: 100%;
+    display: flex;
+    width:400%;
+    transition: all 0.3s;
+}
+.slider section{
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.controls .arrow{
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.controls .arrow i{
+    font-size: 60px;
+    color: #ffffff;
+}
+.arrow.left{
+    left: 10px;
+}
+.arrow.right{
+    right: 10px;
+}
+
+
 
 .skills{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    padding: 30px 0px 30px 0px;
 }
 .skills h1{
     grid-column: 3/ -3;
@@ -160,9 +254,14 @@ span{
     border-radius: 50%;
 
 }
+
+
+
+
 .certificates{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    padding: 30px 0px 30px 0px;
 }
 .certificates h1{
     grid-column: 3/ -3;
@@ -176,10 +275,14 @@ span{
     width: 400px;
     height: 300px;
 }
+
+
+
 .contact-me{
     background-image: url('../images/contact-me-background.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    padding: 100px 0px 70px 0px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     color: #ffffff;
@@ -191,19 +294,99 @@ span{
 
 .contact-me .form{
     grid-column: 3/ 8;
+    font-size: 24px;
+}
+.contact-me .form input{
+    width: 90%;
+    height: 50px;
+    margin: 10px 0px 10px 0px;
+
+}
+.contact-me .form textarea{
+    height: 200px;
+    width: 90%;
+    margin: 10px 0px 10px 0px;
+}
+.send-button{
+    color: #ffffff;
+    background-color: #3E721D;
+    border-radius: 10px;
+    padding: 10px 50px 10px 50px;
+    text-decoration: none;
+    border: 2px solid #ffffff;
+    float: right;
+    margin:20px 70px 0px 0px;
 }
 .contact-me .address{
     grid-column: 8/ -3;
+    border-right: 2px solid #ffffff;
+    text-align: right;
+    padding-right: 20px;
 }
+.contact-me .address ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+.contact-me .address ul li{
+   
+    list-style: none;
+}
+#social{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+
 .subscribe{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    padding-bottom:50px ;
+    padding-top: 50px;
 }
 .subscribe h1{
     grid-column: 3/ -3;
+}
+.subscribe form{
+    grid-column: 3/ -3;
+    display: flex;
+    justify-content: space-between;
+}
+.subscribe form input{
+    height: 50px;
+    width: 45%;
+    border-radius: 10px;
+    border: 1px solid #3E721D;
+}
+.subscribe form button{
+    height: 50px;
+    width: 30%;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 700;
+    border-radius: 10px;
+    background-color: #3E721D;
+    border: 1px solid #3E721D;
 }
 footer{
     background-color: #C6E5B3;
     text-align: center;
     padding: 2px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
