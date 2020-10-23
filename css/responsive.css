@@ -1,41 +1,265 @@
 @import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+
 /* 
-######################################################
-####   Phone responsive  #############################
-######################################################
+##############################
+     IPAD Pro TARGET 
+##############################
 */
 
-@media only screen and (Min-width: 480px) 
-  { 
-
-    /* header{
-        width: 100%;
-    }
+@media screen and (max-width: 1024px){
+    /* 
+    ##############################
+    Header section styling
+    ##############################
+    */
     .nav-container{
         background-color: #3E721D;
+        grid-column: 1/ -1;
+        grid-template-columns: 100px auto;
+        padding: 0px 20px 0px 20px;
+        position: fixed;
+        margin-right: 0;
     }
+
     nav{
-        float: right;
-        display: block;
-        width: 100%;
+        display: flex;
+    }
+    
+    nav li{
         text-align: center;
-    } */
+        padding:1.3rem 0rem 1.3rem 0rem;
+        margin: 0px 0px 0px 25px;
+    }
+    
+    .profile{
+        grid-column: 1/ -1;
+        padding: 5rem 0rem 0rem 0rem;
+        text-align: center;
+    }
+
+    .hook{
+        text-align: center;
+        grid-column: 1/ -1;
+        color: #662113;
+        padding: 2rem 0rem 3rem 0rem;
+    }
+    /* 
+    ##############################
+    About me section styling
+    ##############################
+    */
+    .about-me{
+        grid-template-columns: auto;
+        padding: 0px 20px 0px 20px;
+    }
+    .about-me h1{
+        grid-column: 1/ -1;
+        padding: 0px 10px 0px 10px;
+    }
+    .about-me p{
+        grid-column: 1/ -1;
+        padding: 0px 10px 0px 10px;
+    }
+    /* 
+    ##############################
+    Project section styling
+    ##############################
+    */
+    .projects{
+        padding: 0px 20px 0px 20px;
+    }
+
+    .projects h1{
+        grid-column: 1/ -1;
+        padding: 0px 10px 0px 10px;
+    }
+
+    .projects div{
+        grid-column: 1/ -1;
+        padding: 0px 10px 10px 10px;
+    }
+
+    .project-carousel{
+        height: auto;
+    }
+
+    .project-slider section div{
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    /* 
+    ##############################
+    Testimonial section styling
+    ##############################
+    */
+
+    .testimonial{
+        padding: 0px 20px 0px 20px;
+    }
+    .testimonial h1{
+        grid-column: 1/ -1;
+        padding: 0px 10px 0px 10px;
+    }
+    .testimonial div{
+        grid-column: 1/ -1;
+        padding: 0px 10px 0px 10px;
+    }
+   
+    #testimony-content{
+        width: 70%;
+    }
+
+    .slider{
+        height: auto;
+    }
+    /* 
+    ##############################
+    Skills section styling
+    ##############################
+    */
+    
+    .skills{
+        padding: 0px 20px 0px 20px;
+    }
+
+    .skills h1{
+        grid-column: 1/ -1;
+        padding: 0px 10px 0px 10px;
+    }
+
+    .skills div{
+        grid-column: 1/ -1;
+        padding: 0px 10px 0px 10px;
+    }
+    
+    .skills div img{
+        border-radius: 0%;
+    }
+
+    /* 
+    ##############################
+    Certificate section styling
+    ##############################
+    */
+
+    .certificates{
+        padding: 0px 20px 0px 20px;
+    }
+    .certificates h1{
+        grid-column: 1/ -1;
+        padding: 0px 10px 0px 10px;
+    }
+    .certificates div{
+        grid-column: 1/ -1;
+        padding: 0px 10px 0px 10px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .certificates div img{
+        width: 100%;
+        height: 350px;
+    }
+
+    /* 
+    ##############################
+    Contact me section styling
+    ##############################
+    */
+
+    .contact-me{
+        padding: 80px 20px 0px 20px;
+        overflow: hidden;
+    }
+    .contact-me h1{
+        grid-column: 1/ -1;
+        padding: 0px 10px 0px 10px;
+    }
+    
+    .contact-me .form{
+        grid-column: 1/ 8;
+        padding: 0px 10px 60px 10px;
+    }
+
+    .contact-me .form input{
+        width: 100%;
+        height: 40px;
+    }
+
+    .contact-me .form textarea{
+        height: 100px;
+        width: 100%;
+    }
+
+    .send-button{
+        float: right;
+        margin-right: 0;
+    }
+
+    .contact-me .address{
+        grid-column: 9/ -1;
+        border: none;
+    }
+
+    .contact-me .address ul{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-me .address ul li{
+       float: right;
+       margin-left: 10px;
+    }
+    /* 
+    ##############################
+    Subscribe section styling
+    ##############################
+    */
+
+    .subscribe{
+        padding: 0px 20px 40px 20px;
+    }
+
+    .subscribe h1{
+        grid-column: 1/ -1;
+    }
+
+    .subscribe form{
+        grid-column: 1/ -1;
+        justify-content: space-evenly;
+    }
+
+    .subscribe form input{
+        height: 40px;
+        width: 50%;
+        border-radius: 0;
+    }
+
+    .subscribe form button{
+        height: 40px;
+        width: 30%;
+        border-radius: 0;
+    }
+
 }
 
+/* 
+##############################
+     IPAD TARGET 
+##############################
+*/
+@media screen and (max-width: 768px){
 
-
-
-
-
-
-
-
+} 
 
 
 
 
 /* 
-######################################################
-####   Tablet responsive  ############################
-######################################################
+##############################
+     Iphone 5,6,7,8 plus TARGET 
+##############################
 */
+@media screen and (max-width: 414px){
+
+} 

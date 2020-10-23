@@ -25,7 +25,7 @@ p{
 ##############################
 */
 header{
-    width: 100%;
+
     background-image: url('../images/header-background.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -132,7 +132,7 @@ nav li a{
     height: 100%;
     display: flex;
     width:400%;
-    transition: all 0.3s;
+    transition: all 1s;
 }
 .project-slider section{
     flex-basis: 100%;
@@ -208,7 +208,7 @@ nav li a{
     height: 100%;
     display: flex;
     width:400%;
-    transition: all 0.3s;
+    transition: all 1s;
 }
 .slider section{
     flex-basis: 100%;
@@ -255,7 +255,11 @@ nav li a{
 
 }
 
-
+/* 
+    ##############################
+    Certificate section styling
+    ##############################
+    */
 
 
 .certificates{
@@ -286,7 +290,7 @@ nav li a{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     color: #ffffff;
-
+    height:auto;
 }
 .contact-me h1{
     grid-column: 3/ -3;
@@ -309,7 +313,7 @@ nav li a{
 }
 .send-button{
     color: #ffffff;
-    background-color: #3E721D;
+    background-color:inherit;
     border-radius: 10px;
     padding: 10px 50px 10px 50px;
     text-decoration: none;
@@ -338,7 +342,11 @@ nav li a{
     height: 50px;
     border-radius: 50%;
 }
-
+/* 
+##############################
+    Subscribe section styling
+##############################
+*/
 
 .subscribe{
     display: grid;
