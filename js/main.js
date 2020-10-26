@@ -35,3 +35,17 @@ rightArrow.addEventListener('click', function(){
     sectionIndex = ( sectionIndex < 3 ) ? sectionIndex +1 : 3
     slider.style.transform = "translate(" + (sectionIndex) * -25 + "%)"
 })
+
+
+
+const toogle = document.querySelector('.toogle')
+const navigation = document.querySelector('.navigation')
+toogle.addEventListener('click', function () {
+    navigation.classList.toggle('hide');
+})
+
+
+const card = document.querySelector('.card_inner');
+card.addEventListener('click', function(){
+    card.classList.toggle('is-flipped');
+})

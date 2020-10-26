@@ -3,226 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Affordable and professional web and mobile application development in Rwanda">
-    <meta name="keywords" content="Mobile app developer in Rwanda, Website developer in Rwanda">
-    <meta name="author" content="CYIMANA Faisal">
-    <title>CYIMANA-Faisal |2020</title>
-    <!-- css links -->
-    <link rel="stylesheet" href="css/main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap&family=Oleo+Script:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/responsive.css">
+    <title>Builder</title>
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/sytles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
 </head>
 <body>
-    <!-- Header section -->
-    <header>
-        <div class="nav-container">
-            <a href="" class="logo">Builder</a>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="container flex">
+            <h1>Builder</h1>
             <nav>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About me</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Testimonials</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Certificates</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact me</a></li>
+                <ul>
+                    <li><a href="index1.html">Home</a></li>
+                    <li><a href="index1.html">About me</a></li>
+                    <li><a href="index1.html">Projects</a></li>
+                    <li><a href="index1.html">Skills</a></li>
+                    <li><a href="index1.html">Blog</a></li>
+                    <li><a href="index1.html">Contact me</a></li>
+                </ul>
             </nav>
         </div>
-        <div class="profile"><img src="images/profiles/faisal pp.JPG" alt=""></div>
-        <div class="hook"><h1>Hi, I'm<br> <h2>CYIMANA Faisal</h2>an aspiring developer <br>interested in Web <br> and Mobile application development </h1></div>
-    </header>
-    <!-- About me section -->
-    <section class="about-me">
-        <h1>About me</h1>
-        <p>
-            Hi, I am CYIMANA Faisal, 22 years old I live in Kigali, Rwanda. I am proficient in Python, C++, JavaScrip, and Java. Of these programming languages, I feel most comfortable working with Python, and JavaScrip. In my previous role, I worked mainly with Python to create applications that worked across Web platforms.
-            In my previous role, I used object-oriented programming to determine what data and code were found in an object, rather than looking at the more traditional logic and functions commonly used in other forms of programming. I used data modeling to determine how certain objects related to one another, which allowed me to manipulate those objects more easily and classify them based on the kind of data each contained.
-        </p>
-    </section>
-    <!-- Project section -->
-    <section class="projects">
-        <h1>Projects</h1>
-        <div>
-            <div class="project-container">
-                <div class="project-carousel">
-                    <div class="project-slider">
-                        <section>
-                            <div>
-                                <u><h2>Rest API python project</h2></u><br>
-                                <p>This project was built for the purpose of learning django rest framework and the concept of APIs</p>
-                                <span>#Python</span> <span>#Django</span> <span>#API</span>
-                            </div>
-                        </section>
-                        <section>
-                            <div>
-                                <u><h2>Word count app</h2></u><br>
-                                <p>As i like to build thing I wokeup in the morning and I felt of playing around with code to build a word count app using python and django framework.</p>
-                                <span>#Python</span> <span>#Django</span>
-                            </div>
-                        </section>
-                        <section>
-                            <div>
-                                <u><h2>System interpreter</h2></u><br>
-                                <p>in the workshop organized by the university of rwanda and PHD students from University of Glasgow I have designed an interpreter using python and I won the first place in the workshop</p>
-                                <span>#Python</span> <span>#System programming</span> <span>#Workshop</span>
-                            </div>
-                        </section>
-                        <section>
-                            <div>
-                                <u><h2>BICT websites</h2></u><br>
-                                <p>in the start I was part of the development team where we had to design the structure of the website</p>
-                                <span>#HTML</span> <span>#CSS</span> <span>#JavaScript</span>
-                            </div>
-                        </section>
-                    </div>
-                    <div class="project-controls">
-                        <span class="project-arrow project-left"> 
-                            <i class="material-icons">
-                                keyboard_arrow_left
-                            </i>
-                        </span>
-                        <span class="project-arrow project-right"> 
-                            <i class="material-icons">
-                                keyboard_arrow_right
-                            </i>    
-                        </span>
-                    </div>
+    </div>
+    <!-- Showcase -->
+    <div class="showcase">
+        <div class="container grid">
+            <div class="showcase-image">
+                <img src="images/profiles/faisal pp.JPG" alt="CYIAMANA Profile">
+            </div>
+            <div class="showcase-text">
+                <h1>Hi, I'm CYIMANA Faisal</h1>
+                <p>
+                    an aspiring developer 
+                    interested in Web  
+                    and Mobile application development
+                </p>
+                <h3>Subscribe to the news letter</h3>
+                <form>
+                    
+                    <input type="email" placeholder="E-mail">
+                    <a href="" class="btn btn-outline">Subscribe</a>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- About me -->
+    <div class="about-me">
+        <div class="container grid-1">
+            <h3 class="about-me-heading">About me</h3>
+            <div>
+                <p>
+                    Hi, I am CYIMANA Faisal, 22 years old 
+                    I live in Kigali, Rwanda. 
+                    I am proficient in Python, C++, JavaScrip, 
+                    and Java. Of these programming languages, 
+                    I feel most comfortable working with Python, 
+                    and JavaScrip. In my previous role, 
+                    I worked mainly with Python to create 
+                    applications that worked across Web platforms.
+                    In my previous role, I used object-oriented 
+                    programming to determine what data and code
+                    were found in an object, rather than looking 
+                    at the more traditional logic and functions 
+                    commonly used in other forms of programming. 
+                    I used data modeling to determine how certain 
+                    objects related to one another, which allowed 
+                    me to manipulate those objects more easily and 
+                    classify them based on the kind of data each 
+                    contained.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Projects -->
+    <div class="projects">
+        <div class="container grid-1">
+            <h3>Projects</h3>
+            <div class="project-cards grid-3">
+                <div class="card">
+                    <h1>
+                        Project 1
+                    </h1>
+                </div>
+                <div class="card">
+                    <h1>
+                        Project 2
+                    </h1>
+                </div>
+                <div class="card">
+                    <h1>
+                        Project 3
+                    </h1>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- Testmonials -->
-    <section class="testimonial">
-        <h1>Testimonials</h1>
-        <div>
-            <div class="container">
-                <div class="carousel">
-                    <div class="slider">
-                        <section>
-                            <div id="testimony-content">
-                                <img src="images/profiles/images.jpeg" alt="" srcset="" id="testimonial-profile">
-                                <p id="testifier">
-                                    “As an outdoor clothing retailer, Stio has to establish the effectiveness of its products. One way to do this is with brand ambassadors who wear Stio products and advocate on the company’s behalf. ”
-                                </p>
-                            </div>
-                        </section>
-                        <section>
-                            <div id="testimony-content">
-                                <img src="images/profiles/faisal pp.JPG" alt="" srcset="" id="testimonial-profile">
-                                <p id="testifier">
-                                    “As an outdoor clothing retailer, Stio has to establish the effectiveness of its products. One way to do this is with brand ambassadors who wear Stio products and advocate on the company’s behalf. ”
-                                </p>
-                            </div>
-                        </section>
-                        <section>
-                            <div id="testimony-content">
-                                <img src="images/profiles/images.jpeg" alt="" srcset="" id="testimonial-profile">
-                                <p id="testifier">
-                                    “As an outdoor clothing retailer, Stio has to establish the effectiveness of its products. One way to do this is with brand ambassadors who wear Stio products and advocate on the company’s behalf. ”
-                                </p>
-                            </div>
-                        </section>
-                        <section>
-                            <div id="testimony-content">
-                                <img src="images/profiles/faisal pp.JPG" alt="" srcset="" id="testimonial-profile">
-                                <p id="testifier">
-                                    “As an outdoor clothing retailer, Stio has to establish the effectiveness of its products. One way to do this is with brand ambassadors who wear Stio products and advocate on the company’s behalf. ”
-                                </p>
-                            </div>
-                        </section>
-                    </div>
-                    <div class="controls">
-                        <span class="arrow left"> 
-                            <i class="material-icons">
-                                keyboard_arrow_left
-                            </i>
-                        </span>
-                        <span class="arrow right"> 
-                            <i class="material-icons">
-                                keyboard_arrow_right
-                            </i>    
-                        </span>
-                    </div>
+    </div>
+    <!-- Skills -->
+    <div class="skills">
+        <div class="container grid-1">
+            <h3>Skills</h3>
+            <div class="flex">
+                <div class="card">
+                    <h4>Node.js</h4>
+                    <img src="images/logos/node.png" alt="">
+                </div>
+                <div class="card">
+                    <h4>Python</h4>
+                    <img src="images/logos/python.png" alt="">
+                </div>
+                <div class="card">
+                    <h4>PHP</h4>
+                    <img src="images/logos/php.png" alt="">
+                </div>
+                <div class="card">
+                    <h4>C#</h4>
+                    <img src="images/logos/csharp.png" alt="">
                 </div>
             </div>
         </div>
-    </section>
-    <!-- Skills section -->
-    <section class="skills">
-        <h1 >Skills</h1>
-        <div>
-            <img src="images/skills/css3.png" alt="">
-            <img src="images/skills/html.png" alt="">
-            <img src="images/skills/javascript.png" alt="">
-            <img src="images/skills/mongodb.png" alt="">
-            <img src="images/skills/python.png" alt="">
-        </div>
-    </section>
-    <!-- Certificates -->
-    <section class="certificates">
-        <h1>Certificates</h1>
-        <div>
-            <img src="images/certificates/cloudcert.png" alt="">
-            <img src="images/certificates/mongodbcert.png" alt="">
-            <img src="images/certificates/mongodbcert.png" alt="">
-            <img src="images/certificates/pwsa.png" alt="">
-            
-        </div>
-    </section>
-    <!-- Contact section -->
-    <section class="contact-me">
-        <h1>Contact me</h1>
-        <div class="form">
-            <form action="" methode="POST">
+    </div>
+    <!-- Contact me -->
+    <div class="contact-me">
+        <div class="container grid-1">
+            <h3>About me</h3>
+            <div class="grid">
+                <form class="grid-1">
+                    <div class="form-control">
+                        <input type="text" placeholder="Names Example: CYIMANA Faisal">
+                    </div>
+                    <div class="form-control">
+                        <input type="text" placeholder="Subject Example: Requesting you to join my team.">
+                    </div>
+                    <div class="form-control">
+                        <input type="text" placeholder="E-mail Example: example@gmail.com">
+                    </div>
+                    <div class="form-control">
+                        <label for="detail">Detail your message please:</label><br>
+                        <textarea id="detail">
+                        </textarea>
+                    </div>
+                    <div class="form-control">
+                        <a href="" class="btn btn-outline">Send message</a>
+                    </div>
+                </form>
                 <div>
-                    <label for="name">Name:</label><br>
-                    <input type="text" id="name">
+                    <h4 class="text-center">Address</h4>
+                    <p class="text-center">
+                        E-mail: cyimanafaisal@gmail.com <br>
+                        Tel: (+250) 780 508 308 <br>
+                        Location: Kicukiro ,Kigali, Rwanda <br>
+                        Po-Box: N/A <br>
+                        Street: KK 8 Ave
+                    </p>
                 </div>
-                <div>
-                    <label for="email">Email:</label><br>
-                    <input type="email" id="email">
-                </div>
-                <div>
-                    <label for="message">Message:</label><br>
-                    <textarea name="" id="message">
-
-                    </textarea>
-                </div>
-
-                <Div>
-                    <a href="#" class="send-button">Send</a>
-                </Div>
-                
-            </form>
+            </div>
         </div>
-        <div class="address">
-            <u><h2>Addresses:</h2></u>
-            Tel: (+250) 780 508 308 <br>
-            E-mail: cyimanafaisal@gmail.com <br>
-            Location: Kicukiro, Kigali, Rwanda <br>
-            <ul>
-                <li><a href="http://"><img id="social" src="images/github.png" alt="" srcset=""></a></li>
-                <li><a href="http://"><img id="social" src="images/facebook.png" alt="" srcset=""></a></li>
-                <li><a href="http://"><img id="social" src="images/twitter.png" alt="" srcset=""></a></li>
-                <li><a href="http://"><img id="social" src="images/insta.png" alt="" srcset=""></a></li>
-            </ul>
-
+    </div>
+    <footer >
+        <div class="container grid-1">
+            <h3 class="text-center">Created and Developed by CYIMANA Faisal</h3>
+            <div class="social .flex">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-github"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
         </div>
-    </section>
-    <!-- News letter subscription section -->
-    <section class="subscribe">
-        <h1>Subscribe To our news letter</h1>
-        <form action="">
-            <input type="email">
-            <button>SUBSCRIBE</button>
-        </form>
-
-    </section>
-    <!-- Footer -->
-    <footer>
-        <p>Designed and developed by CYIMANA Faisal</p>
     </footer>
-    <!-- javascripts -->
-    <script src="js/main.js"></script>
+
 </body>
 </html>
