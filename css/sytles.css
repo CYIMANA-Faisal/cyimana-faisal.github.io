@@ -14,6 +14,7 @@ body {
   color: var(--color-grey);
   line-height: 1.6;
   font-size: 18px;
+  transition: 0.2s;
 }
 ul {
   list-style-type: none;
@@ -45,6 +46,11 @@ img {
   height: 70px;
   font-weight: 700;
   border-bottom: 2px solid var(--color-white);
+}
+.navbar .bugger {
+  display: none;
+  cursor: pointer;
+  background-color: transparent;
 }
 .navbar ul {
   display: flex;
@@ -172,4 +178,103 @@ footer {
   background-color: var(--primary);
   height: auto;
   color: var(--color-white);
+  padding: 40px 0;
+}
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social a {
+  color: var(--color-white);
+  margin: 0 20px;
+}
+.hide {
+  display: none;
+}
+
+/* MOBILE RESPONSIVE */
+@media screen and (max-width: 500px) {
+  /* NAVBAR */
+  .navbar {
+    background-color: var(--primary);
+    color: var(--color-white);
+    height: auto;
+    font-weight: 700;
+    border-bottom: none;
+  }
+
+  .navbar .bugger {
+    display: block;
+  }
+  .navbar .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .navbar .container nav {
+    grid-column: 1 / -1;
+  }
+  .navbar ul {
+    display: block;
+    text-align: center;
+    background-color: var(--color-white);
+  }
+  .navbar i {
+    text-align: right;
+  }
+  .navbar li {
+    margin: 20px 0px;
+  }
+  .navbar a {
+    color: var(--primary);
+    padding: 10px;
+    margin: 10px 5px;
+    font-size: 26px;
+  }
+  .navbar a:hover {
+    font-weight: 400;
+  }
+  .navbar .flex {
+    justify-content: none;
+  }
+  /* SHOWCASE */
+  .showcase {
+    height: auto;
+    background-color: var(--primary);
+    color: var(--color-white);
+    position: relative;
+  }
+  .showcase .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .showcase h1 {
+    font-size: 30px;
+  }
+  .showcase p {
+    margin: 20px 0;
+  }
+  .showcase form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .showcase input {
+    padding: 15px 5px;
+    margin-right: 5px;
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 1px solid var(--color-white);
+  }
+  .showcase input:focus {
+    border: none;
+  }
+  .showcase img {
+    border-radius: 50%;
+    padding: 20px 0;
+  }
+  /* PROJECT */
+  .projects .container .prijects-cards {
+    grid-column: 1/ -1;
+  }
 }
