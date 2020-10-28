@@ -14,7 +14,7 @@
         <div class="container flex mobile-grid">
             <h1>Builder</h1>
             <i class="fas fa-bars fa-3x bugger"></i>
-            <nav class="navigation">
+            <nav class="navigation hide">
                 <ul>
                     <li><a href="index1.html">Home</a></li>
                     <li><a href="#aboutme">About me</a></li>
@@ -80,21 +80,42 @@
     <div class="projects" id="projects">
         <div class="container grid-1">
             <h3>Projects</h3>
-            <div class="project-cards grid-3">
-                <div class="card">
-                    <h1>
-                        Project 1
-                    </h1>
+            <div class="project-cards card-container">
+                <div class="card middle">
+                    <div class="front">
+                        <img class="project-image" src="images/projects/rest-api.jpg" alt="">
+                    </div>
+                    <!-- <div class="back">
+                        <h1>Profiles REST API</h1>
+                        <p>
+                            This was the backend service I built at the time I was learnig django rest framework
+                        </p>
+                        <i class="fab fa-github fa-2x"></i>
+                    </div> -->
                 </div>
                 <div class="card">
-                    <h1>
-                        Project 2
-                    </h1>
+                    <div class="front">
+                        <img class="project-image" src="images/projects/portfolio.png" alt="">
+                    </div>
+                    <!-- <div class="back">
+                        <h1>My portfolio website</h1>
+                        <p>
+                            This is the website that showcase my capabilities
+                        </p>
+                        <i class="fab fa-github fa-2x"></i>
+                    </div> -->
                 </div>
                 <div class="card">
-                    <h1>
-                        Project 3
-                    </h1>
+                    <div class="front">
+                        <img class="project-image" src="images/projects/mflix.jpg" alt="">
+                    </div>
+                    <!-- <div class="back">
+                        <h1>mflix app</h1>
+                        <p>
+                            This is the app we buid when we were lerning mongo db.
+                        </p>
+                        <i class="fab fa-github fa-2x"></i>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -127,7 +148,17 @@
     <div class="contact-me" id="contactme">
         <div class="container grid-1">
             <h3>About me</h3>
-            <div class="grid">
+            <div class="contact-form">
+                <div>
+                    <h4 class="text-center">Address</h4>
+                    <p class="text-center">
+                        E-mail: cyimanafaisal@gmail.com <br>
+                        Tel: (+250) 780 508 308 <br>
+                        Location: Kicukiro ,Kigali, Rwanda <br>
+                        Po-Box: N/A <br>
+                        Street: KK 8 Ave
+                    </p>
+                </div>
                 <form class="grid-1">
                     <div class="form-control">
                         <input type="text" placeholder="Names Example: CYIMANA Faisal">
@@ -147,16 +178,6 @@
                         <a href="" class="btn btn-outline">Send message</a>
                     </div>
                 </form>
-                <div>
-                    <h4 class="text-center">Address</h4>
-                    <p class="text-center">
-                        E-mail: cyimanafaisal@gmail.com <br>
-                        Tel: (+250) 780 508 308 <br>
-                        Location: Kicukiro ,Kigali, Rwanda <br>
-                        Po-Box: N/A <br>
-                        Street: KK 8 Ave
-                    </p>
-                </div>
             </div>
         </div>
     </div>
