@@ -1,0 +1,59 @@
+.article {
+  width: 100%;
+  background-color: var(--color-white);
+  margin: 40px 0px;
+}
+.article .article-grid {
+  display: grid;
+  grid-template-columns: repeat(1/ 1fr);
+  gap: 20px;
+}
+.article .author {
+  display: flex;
+  gap: 10px;
+  font-size: 16px;
+}
+.article .author img {
+  width: 48px;
+  height: 48px;
+}
+.article .add-comment {
+  display: flex;
+  flex-direction: column;
+}
+.article .add-comment input {
+  height: 50px;
+  margin: 20px 0;
+  border: none;
+  width: 50%;
+  border-bottom: 2px solid var(--color-grey);
+}
+.article .add-comment input:focus {
+  outline: none;
+}
+.article .add-comment textarea {
+  height: 200px;
+  margin: 20px 0;
+  width: 50%;
+}
+.article .comment {
+  border-bottom: 1px solid var(--primary);
+  margin-bottom: 40px;
+}
+.article .comment .commentor {
+  display: flex;
+  gap: 10px;
+  font-size: 16px;
+}
+.article .comment .commentor img {
+  width: 48px;
+  height: 48px;
+}
+/* IPAD RESPONSIVE */
+
+.article .add-comment input {
+  width: 100%;
+}
+.article .add-comment textarea {
+  width: 100%;
+}
