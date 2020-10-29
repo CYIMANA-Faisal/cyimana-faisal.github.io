@@ -1,0 +1,30 @@
+.blog-card {
+  grid-column: 1/ -1;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  box-shadow: 0px 0px 20px #888888;
+  margin: 20px 0px 20px 0px;
+  padding: 40px 40px;
+}
+.blog-info {
+  grid-column: 1/ -1;
+  height: 300px;
+}
+.image {
+  width: 100px !important;
+  height: 100px !important;
+  border-radius: 50%;
+  margin: 0px 20px 0px 0px;
+}
+.blog-info .user-info {
+  width: 80%;
+}
+footer {
+  background-color: var(--primary);
+  display: flex;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
