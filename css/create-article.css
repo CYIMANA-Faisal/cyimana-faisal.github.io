@@ -1,0 +1,41 @@
+.create-article .form-holder {
+  margin-top: 40px;
+  width: 100%;
+  display: grid;
+  border: 2px solid rgb(175, 175, 175);
+  grid-template-columns: repeat(1, 1fr);
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.form-holder form input {
+  margin: 20px 0;
+  height: 50px;
+  width: 100%;
+}
+.form-holder form .title {
+  border: none;
+  border-bottom: 2px solid var(--color-grey);
+}
+.form-holder form textarea {
+  width: 100%;
+  height: 400px;
+  margin-bottom: 20px;
+}
+/* IPAD View */
+@media screen and (max-width: 768px) {
+  .form-holder form textarea {
+    height: 200px;
+  }
+  .create-article .form-holder {
+    border: none;
+  }
+  .form-holder form input {
+    margin: 10px 0px;
+  }
+  .form-holder form textarea {
+    margin: 10px 0px;
+  }
+}
