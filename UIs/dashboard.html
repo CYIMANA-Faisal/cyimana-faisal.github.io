@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard |</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../css/utilities.css">
+    <link rel="stylesheet" href="../css/sytles.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="container flex">
+            <h1 class="logo">Builder</h1>
+            <i class="fa fa-bars fa-2x bugger"></i>
+            <nav class="navigation hide">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="article-list.html">List-articles</a></li>
+                    <li><a href="queries.html">Queries</a></li>
+                    <li><a href="blog.html">Sign out &nbsp; &nbsp;<i class="fas fa-sign-out-alt"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!-- main content -->
+    <div class="main-content">
+        <div class="container content-wraper">
+            <div class="profiling">
+                <img src="../images/profiles/faisal pp.JPG" alt="">
+                <h3>CYIMANA Faisal</h3>
+                <p>
+                    Aspiring Software Developer Interested in 
+                    web apps development and mobile apps development.
+                </p>
+                <hr>
+                <h4>Social media accounts</h4>
+                <p><i class="fab fa-twitter"></i> &nbsp; @cyimana_faisal</p>
+                <p><i class="fas fa-envelope fa-1x"></i> &nbsp;cyimanafaisal@gmail.com</p>
+                <p><i class="fas fa-map-marker-alt fa-1x"></i> &nbsp;KIGALI, RWANDA</p>
+                <div class="article-counter">
+                    11 articles
+                    <a href="create-article.html"><i class="fas fa-plus-circle fa-2x"></i></a>
+                </div>
+                <div class="queries-counter">
+                    102 Queries
+                </div>
+            </div>
+            <div class="reminder">
+                <div>
+                    <h3>About me</h3>
+                    <div class="wraper">
+                        Hi, I am CYIMANA Faisal, 22 years old I live in Kigali, Rwanda. I am proficient in Python, C++, JavaScrip, and Java. Of these programming languages, I feel most comfortable working with Python, and JavaScrip. In my previous role, I worked mainly with Python to create applications that worked across Web platforms. In my previous role, I used object-oriented programming to determine what data and code were found in an object, rather than looking at the more traditional logic and functions commonly used in other forms of programming. I used data modeling to determine how certain objects related to one another, which allowed me to manipulate those objects more easily and classify them based on the kind of data each contained.
+                    </div>
+                    <button href="" class="btn function" id="edit-about-me"><i class="fas fa-pen-alt fa-1x"></i></button>
+                </div>
+                <hr>
+                <div>
+                    <h3>Projects</h3>
+                    <div class="project-wraper">
+                        <div class="project-item">
+                            <img src="../images/projects/mflix.jpg" alt="" class="project-image">
+                            <button class="btn">Remove</button>
+                        </div>
+                        <div class="project-item">
+                            <img src="../images/projects/portfolio.png" alt="" class="project-image">
+                            <button class="btn">Remove</button>
+                        </div>
+                        <div class="project-item">
+                            <img src="../images/projects/rest-api.jpg" alt="" class="project-image">
+                            <button class="btn">Remove</button>
+                        </div>
+                    </div>
+                    <button href="" class="btn function" id="add-project"><i class="fas fa-plus-circle fa-1x"></i></button>
+                </div>
+                <hr>
+                <div class="skills-admin">
+                    <h3>Skills</h3>
+                    <div class="skills-wraper">
+                        <div class="skill-item">
+                            <img src="../images/logos/csharp.png" alt="">
+                            <button href="" class="btn"> <i class="fas fa-trash-alt fa-1x"></i></buttom>
+                        </div>
+                        <div class="skill-item">
+                            <img src="../images/logos/php.png" alt="">
+                            <button href="" class="btn"> <i class="fas fa-trash-alt fa-1x"></i></buttom>
+                        </div>
+                        <div class="skill-item">
+                            <img src="../images/logos/node.png" alt="">
+                            <button href="" class="btn"> <i class="fas fa-trash-alt fa-1x"></i></buttom>
+                        </div>
+                        <div class="skill-item">
+                            <img src="../images/logos/go.png" alt="">
+                            <button href="" class="btn"> <i class="fas fa-trash-alt fa-1x"></i></buttom>
+                        </div>
+                        <div class="skill-item">
+                            <img src="../images/logos/clojure.png" alt="">
+                            <button href="" class="btn"> <i class="fas fa-trash-alt fa-1x"></i></buttom>
+                        </div>
+                    </div>
+                    <button href="" class="btn function"><i class="fas fa-plus-circle fa-1x"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="edit-about-modal">
+        <div class="container modal-content">
+            <div class="close">+</div>
+            <h3>About me</h3>
+            <form action="">
+                <textarea name="" class="about-update">
+                    Hi, I am CYIMANA Faisal, 22 years old I live in Kigali, Rwanda. I am proficient in Python, C++, JavaScrip, and Java. Of these programming languages, I feel most comfortable working with Python, and JavaScrip. In my previous role, I worked mainly with Python to create applications that worked across Web platforms. In my previous role, I used object-oriented programming to determine what data and code were found in an object, rather than looking at the more traditional logic and functions commonly used in other forms of programming. I used data modeling to determine how certain objects related to one another, which allowed me to manipulate those objects more easily and classify them based on the kind of data each contained.
+                </textarea>
+                <button href="" class="btn">Save</button>
+            </form>
+        </div>
+    </div>
+    <div class="add-project-modal">
+        <div class="container modal-content">
+            <div class="project-close">+</div>
+            <h3>Add new project</h3>
+            
+            <form action="">
+                <input type="file"><br>
+                Describe the project:
+                <textarea name="" class="about-update">
+                </textarea>
+                <button href="" class="btn">Add</button>
+            </form>
+        </div>
+    </div>
+    <footer >
+        <div class="container grid-1">
+            <h3 class="text-center">Created and Developed by CYIMANA Faisal</h3>
+            <div class="social .flex">
+                <a href=""> <i class="fab fa-twitter fa-2x"></i></a>
+                <a href=""> <i class="fab fa-github fa-2x"></i></a>
+                <a href=""> <i class="fab fa-instagram fa-2x"></i></a>
+                <a href=""> <i class="fab fa-linkedin fa-2x"></i></a>
+                <a href=""> <i class="fab fa-facebook fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+</html>
