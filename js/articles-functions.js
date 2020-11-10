@@ -56,8 +56,6 @@ const renderArticlesToDashboard = function (doc) {
             });
         }
     });
-
-
 };
 
 
@@ -115,7 +113,7 @@ const create_article = function () {
         storageRef.put(image).then( () => {
             // GET THE PATH TO THE FIREBASE STORAGE 
 
-            storageRef.child(path).getDownloadURL().then(function(url) {
+            storageRef.getDownloadURL().then(function(url) {
                 let fullPath = url;
                 // ARTICLE OBJECT
 
