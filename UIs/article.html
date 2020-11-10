@@ -29,141 +29,33 @@
     <!-- Article -->
     <div class="article">
         <div class="container article-grid">
-            <h1>How to Build a Blog with Gatsby and Netlify CMS – A Complete Guide</h1>
+            <h1 id="title"></h1>
             <hr>
-            <img src="../images/blog/blog-image.jpeg" alt="">
-            <p>
-                In this article, we are going to build a blog with Gatsby and Netlify CMS. You will learn how to install Gatsby on your computer and use it to quickly develop a super fast blog site.
-
-                You are also going to learn how to add Netlify CMS to your site by creating and configuring files, then connecting the CMS to your site through user authentication.
-
-                And finally, you'll learn how to access the CMS admin so that you can write your first blog post.
-
-                The complete code for this project can be found here.
-
-                Here's a brief introduction to these tools.
-
-                What is Gatsby?
-                Gatsby is a free and open-source framework based on React that helps you build fast websites and web apps. It is also a static site generator like Next.js, Hugo, and Jekyll.
-
-                It includes SEO (Search Engine Optimization), accessibility, and performance optimization from the get-go. This means that it will take you less time to build production-ready web apps than if you were building with React alone.
-
-                What is Netlify CMS?
-                Netlify CMS is a CMS (Content Management System) for static site generators. It is built by the same people who made Netlify. It allows you to create and edit content as if it was WordPress, but it's a much simpler and user-friendly interface.
-
-                The main benefit of Netlify CMS is you don't have to create markdown files every time you want to write a post. This is useful for content writers who don't want to deal with code, text editors, repositories, and anything to do with tech - they can just focus on writing articles.
-
-                Alright, without any further ado, let's start building the blog!
-
-                But before we get going, a quick heads up: This guide requires prior knowledge of JavaScript and React. If you are not comfortable with these tools yet, I've linked the resources at the end of the article to help you brush up on those skills.
-
-                Even if you're new to those technologies, I tried to make this guide as simple as I was able so you can follow along.
-
-                How to set up the environment
-                Before we can build Gatsby sites, we have to make sure that we have installed all the right software required for the blog.
-
-                Install Node.js
-                Node.js is an environment that can run JavaScript code outside of a web browser.
-
-                It is a tool that allows you to write backend server code instead of using other programming languages such as Python, Java, or PHP. Gatsby is built with Node.js and that's why we need to install it on our computer.
-
-                To install Node.js, go to the download page and download it based on your operating system.
-
-                When you are done following the installation prompts, open the terminal and run node -v to check if it was installed correctly. Currently, the version should be 12.18.4 and above.
-
-                Install Git
-                Git is a free and open-source distributed version control system that helps you manage your coding projects efficiently.
-
-                Gatsby starter uses Git to download and install its required files and that's why you need to have Git on your computer.
-
-                To install Git, follow the instructions based on your operating system:
-
-                Install Git on Mac OS
-                Install Git on Windows
-                Install Git on Linux
-                Install Gatsby CLI
-                Gatsby CLI (Command Line Interface) is the tool that lets you build Gatsby-powered sites. By running this command, we can install any Gatsby sites and the plugins we want.
-
-                To install Gatsby CLI, open the terminal and run this command:
-
-                npm install -g gatsby-cli
-                Once everything is set up successfully then we are ready to build our first Gatsby site.
-
-                How to build a Gatsby site
-                In this guide, we're going to use the default Gatsby starter theme, but you're free to choose any themes on the Gatsby starter library. I personally use the Lekoart theme because the design is minimalist and beautiful, and it has a dark mode.
-
-                In the terminal, run this command to install the new Gatsby blog:
-
-                gatsby new foodblog https://github.com/gatsbyjs/gatsby-starter-blog
-                Note for Windows users: If you encounter "Error: Command failed with exit code 1: yarnpkg" while creating Gatsby site, see this page to troubleshoot it. You may have to clean up dependencies of old yarn installations or follow the Gatsby on Windows instructions.
-
-                What's does this command line mean exactly? Let me explain.
-
-                new - This is the command line that creates a new Gatsby project
-                foodblog - This is the name of the project. You can name it whatever you want here. I named this project foodblog as an example only.
-                The URL (https://github.com/gatsbyjs/gatsby-starter-blog) - This URL specified points to a code repository that holds the starter code you want to use. In other words, I picked the theme for the project.
-                Once the installation is complete, we'll run the cd foodblog command which will take us to the location of our project file.
-
-                cd foodblog
-                Then we'll run gatsby develop that will start running on the local machine. Depending on the specs of your computer, it will take a little while before it is fully started.
-
-                gatsby develop
-                Open a new tab in your browser and go to http://localhost:8000/. You should now see your new Gatsby site!
+            <img src="" alt="" id="article-image">
+            <p id="article-content">
+                
             </p>
             <hr>
             <div class="author">
                 <img src="../images/profiles/avatar.png" alt="">
-                <span>CYIMANA Faisal <br> <i> 2 days ago</i></span>
+                <span>CYIMANA Faisal <br> <i class="timestamp"> 2 days ago</i></span>
             </div>
             <hr>
             <div class="add-comment">
                 <h4>Add comment</h4>
-                <form>
-                    <input type="text" placeholder="Your name"><br>
+                <form method="POST" class="comment-form">
+                    <input type="text" placeholder="Your name" name="name"><br>
                     your comment: <br>
-                    <textarea name="">
+                    <textarea name="comment">
 
                     </textarea><br>
-                    <a href="" class="btn">Comment</a>
+                    <button class="btn">Comment</button>
                 </form>
             </div>
             <hr>
             <h3>Comments</h3>
-            <div class="comment">
-                <div class="commentor">
-                    <img src="../images/profiles/avatar.png" alt="">
-                    <span>CYIMANA Faisal <br> <i> 2 days ago</i></span>
-                </div>
-                <p>
-                    When you hit the publish button, the post file is automatically created. Then it will add to the changes with the commit message based on the name of the post along with the date and time of publishing. Finally, it will be pushed to the host repository, and from there your post will be seen live.
-                </p>
-            </div>
-            <div class="comment">
-                <div class="commentor">
-                    <img src="../images/profiles/avatar.png" alt="">
-                    <span>CYIMANA Faisal <br> <i> 2 days ago</i></span>
-                </div>
-                <p>
-                    When you hit the publish button, the post file is automatically created. Then it will add to the changes with the commit message based on the name of the post along with the date and time of publishing. Finally, it will be pushed to the host repository, and from there your post will be seen live.
-                </p>
-            </div>
-            <div class="comment">
-                <div class="commentor">
-                    <img src="../images/profiles/avatar.png" alt="">
-                    <span>CYIMANA Faisal <br> <i> 2 days ago</i></span>
-                </div>
-                <p>
-                    When you hit the publish button, the post file is automatically created. Then it will add to the changes with the commit message based on the name of the post along with the date and time of publishing. Finally, it will be pushed to the host repository, and from there your post will be seen live.
-                </p>
-            </div>
-            <div class="comment">
-                <div class="commentor">
-                    <img src="../images/profiles/avatar.png" alt="">
-                    <span>CYIMANA Faisal <br> <i> 2 days ago</i></span>
-                </div>
-                <p>
-                    When you hit the publish button, the post file is automatically created. Then it will add to the changes with the commit message based on the name of the post along with the date and time of publishing. Finally, it will be pushed to the host repository, and from there your post will be seen live.
-                </p>
+            <div class="comment-wraper">
+
             </div>
         </div>
     </div>
@@ -180,6 +72,16 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.1.0/uuidv4.min.js"></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-storage.js"></script>
+    <script src="../js/firebaseConfig.js"></script>
+    <script src="../js/articles-functions.js"></script>
     <script src="../js/main.js"></script>
+    <script src="../js/article.js"></script>
 </body>
 </html>
