@@ -52,7 +52,6 @@
                 <div>
                     <h3>About me</h3>
                     <div class="wraper">
-                        Hi, I am CYIMANA Faisal, 22 years old I live in Kigali, Rwanda. I am proficient in Python, C++, JavaScrip, and Java. Of these programming languages, I feel most comfortable working with Python, and JavaScrip. In my previous role, I worked mainly with Python to create applications that worked across Web platforms. In my previous role, I used object-oriented programming to determine what data and code were found in an object, rather than looking at the more traditional logic and functions commonly used in other forms of programming. I used data modeling to determine how certain objects related to one another, which allowed me to manipulate those objects more easily and classify them based on the kind of data each contained.
                     </div>
                     <button href="" class="btn function" id="edit-about-me"><i class="fas fa-pen-alt fa-1x"></i></button>
                 </div>
@@ -109,11 +108,10 @@
         <div class="container modal-content">
             <div class="close">+</div>
             <h3>About me</h3>
-            <form action="">
-                <textarea name="" class="about-update">
-                    Hi, I am CYIMANA Faisal, 22 years old I live in Kigali, Rwanda. I am proficient in Python, C++, JavaScrip, and Java. Of these programming languages, I feel most comfortable working with Python, and JavaScrip. In my previous role, I worked mainly with Python to create applications that worked across Web platforms. In my previous role, I used object-oriented programming to determine what data and code were found in an object, rather than looking at the more traditional logic and functions commonly used in other forms of programming. I used data modeling to determine how certain objects related to one another, which allowed me to manipulate those objects more easily and classify them based on the kind of data each contained.
+            <form action="" class="aboutMe">
+                <textarea name="aboutmecontent" class="about-update">
                 </textarea>
-                <button href="" class="btn">Save</button>
+                <button href="" class="btn" type="submit">Save</button>
             </form>
         </div>
     </div>
@@ -143,6 +141,11 @@
             </div>
         </div>
     </footer>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-storage.js"></script> 
+    <script src="../js/firebaseConfig.js"></script>
     <script src="../js/main.js"></script>
     <script src="../js/dashboard.js"></script>
 </body>
