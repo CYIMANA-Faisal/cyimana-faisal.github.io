@@ -1,0 +1,17 @@
+.message-wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap:10px;
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+.message{
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--color-grey);
+    border-radius: 4px;
+}
+.message a{
+    color: var(--primary);
+}
