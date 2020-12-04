@@ -13,6 +13,7 @@ document.querySelector(".project-close").addEventListener('click', function(){
     document.querySelector('.add-project-modal').style.display = 'none';
 })
 
+
 // ABOUT ME HANDLES
 
 let aboutMeId = '';
@@ -117,8 +118,4 @@ document.querySelector('.add-project-modal').addEventListener('submit', function
     
 
 })
-
-
-
-
 
